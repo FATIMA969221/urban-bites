@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Urban Bites</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+     <nav class="navbar">
+        <div class="navbar-brand">
+            <div class="navbar-logo-circle">U</div>
+            <div class="navbar-logo">Urban <span>Bites</span></div>
+         </div>
+         <ul class="navbar-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+         </ul>
+         <div class="navbar-right">
+            <a href="login.html" class="navbar-btn" id="navLoginBtn">Login</a>
+            <div class="navbar-user" id="navUserSection" style="display:none;">
+                <div class="user-avatar" id="navUserAvatar"></div>
+                <button class="logout-btn" id="logoutBtn">Logout</button>
+            </div>
+         </div>
+     </nav>
+     
+     <!-- HERO SLIDER -->
+      <div class="slider-wrapper">
+        <div class="slide active" style="background-image:url('https://plus.unsplash.com/premium_photo-1670984940113-f3aa1cd1309a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+        <div class="slide-overlay"></div>
+        <div class="slide-content">
+            <h1>Welcome to Urban Bites</h1>
+            <p>Where every meal tells a delicious story</p>
+            <a href="#reservation" class="btn-primary">Book a Table</a>
+         </div>
+     </div>
+     <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1675150277436-9c7348972c11?q=80&w=864&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+       <div class="slide-overlay"></div>
+       <div class="slide-content">
+        <h1>Fresh Ingredients, Bold Flavours</h1>
+        <p>Crafted with love and the finest local produce</p>
+        <a href="#reservation" class="btn-primary">Reserve Now</a>
+     </div>
+    </div>
+    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1782983595358-d8f8d59ae442?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+       <div class="slide-overlay"></div>
+       <div class="slide-content">
+        <h1>Experience Fine Dining</h1>
+        <p>An unforgettable culinary journey awaits you</p>
+        <a href="#reservation" class="btn-primary">Get Started</a>
+       </div>
+    </div>
+    <button class="slider-btn slider-prev" id="sliderPrev">&#8249;</button>
+    <button class="slider-btn slider-next" id="sliderNext">&#8250;</button>
+    <div class="slider-dots">
+        <div class="dot active" data-index="0"></div>
+        <div class="dot" data-index="1"></div>
+        <div class="dot" data-index="2"></div>
+     </div>
+    </div>
+    
+    <!-- DIVE INTO MENU -->
+     <div class="dive-section">
+        <h2>Dive Into Our Special Menu</h2>
+        <p>Delicious meal dishes crafted for every craving</p>
+     </div>
+     
+     <!-- MENU WIPE SLIDER -->
+      <div class="menu-slider-section">
+        <div class="menu-track-wrapper">
+         <div class="menu-track" id="menuTrack">
+            <a class="menu-card" href="product-details.html?id=1"><img src="https://images.unsplash.com/photo-1713330801172-03f8d1c0dde7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGJ1cmdlcnxlbnwwfHwwfHx8MA%3D%3D" alt="Burger"><div class="menu-card-body"><h4>Classic Smash Burger</h4><p>Beef patty, cheddar, lettuce</p><div class="menu-card-footer"><span class="price">$12</span><span class="btn-view">View Details</span></div></div></a>
+            <a class="menu-card" href="product-details.html?id=2"><img src="https://images.unsplash.com/photo-1655673654158-9f7285b7d1ea?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fHBpenphfGVufDB8fDB8fHww" alt="Pizza"><div class="menu-card-body"><h4>Margherita Pizza</h4><p>Mozzarella, basil, tomato</p><div class="menu-card-footer"><span class="price">$15</span><span class="btn-view">View Details</span></div></div></a>
+            <a class="menu-card" href="product-details.html?id=3"><img src="https://plus.unsplash.com/premium_photo-1676047258557-de72954cf17c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8c2FsYWR8ZW58MHx8MHx8fDA%3D" alt="Salad"><div class="menu-card-body"><h4>Garden Fresh Salad</h4><p>Mixed greens, vinaigrette</p><div class="menu-card-footer"><span class="price">$9</span><span class="btn-view">View Details</span></div></div></a>
+            <a class="menu-card" href="product-details.html?id=4"><img src="https://images.unsplash.com/photo-1781332147533-aefdfe14dc2c?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pasta"><div class="menu-card-body"><h4>Creamy Carbonara</h4><p>Spaghetti, pancetta, parmesan</p><div class="menu-card-footer"><span class="price">$14</span><span class="btn-view">View Details</span></div></div></a>
+            <a class="menu-card" href="product-details.html?id=5"><img src="https://images.unsplash.com/photo-1633436375795-12b3b339712f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Bowl"><div class="menu-card-body"><h4>Grilled Chicken Bowl</h4><p>Chicken, rice, avocado</p><div class="menu-card-footer"><span class="price">$13</span><span class="btn-view">View Details</span></div></div></a>
+            <a class="menu-card" href="product-details.html?id=6"><img src="https://images.unsplash.com/photo-1706650616334-97875fae8521?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Steak"><div class="menu-card-body"><h4>Ribeye Steak</h4><p>Prime cut, herb butter, fries</p><div class="menu-card-footer"><span class="price">$28</span><span class="btn-view">View Details</span></div></div></a>
+            <a class="menu-card" href="product-details.html?id=7"><img src="https://plus.unsplash.com/premium_photo-1661730329741-b3bf77019b39?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dGFjb3N8ZW58MHx8MHx8fDA%3D" alt="Tacos"><div class="menu-card-body"><h4>Street Tacos</h4><p>Corn tortilla, beef, onion</p><div class="menu-card-footer"><span class="price">$11</span><span class="btn-view">View Details</span></div></div></a>
+            <a class="menu-card" href="product-details.html?id=8"><img src="https://images.unsplash.com/photo-1762631176731-42672d735b85?q=80&w=760&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dessert"><div class="menu-card-body"><h4>Chocolate Lava Cake</h4><p>Warm chocolate, ice cream</p><div class="menu-card-footer"><span class="price">$8</span><span class="btn-view">View Details</span></div></div></a>
+            <a class="menu-card" href="product-details.html?id=9"><img src="https://images.unsplash.com/photo-1768634003098-9d5848d3b93f?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Breakfast"><div class="menu-card-body"><h4>Full English Breakfast</h4><p>Eggs, bacon, toast, beans</p><div class="menu-card-footer"><span class="price">$10</span><span class="btn-view">View Details</span></div></div></a>
+            <a class="menu-card" href="product-details.html?id=10"><img src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3VzaGl8ZW58MHx8MHx8fDA%3D" alt="Sushi"><div class="menu-card-body"><h4>Sushi Platter</h4><p>Salmon, tuna, avocado rolls</p><div class="menu-card-footer"><span class="price">$22</span><span class="btn-view">View Details</span></div></div></a>
+          </div>
+       </div>
+       <div class="menu-nav">
+         <button id="menuPrev">&#8249;</button>
+         <button id="menuNext">&#8250;</button>
+       </div>
+     </div>
+     
+     <!-- BREAKFAST MENU -->
+      <div class="meal-menu-section">
+         <div class="meal-icon">🔍</div>
+         <h2 class="section-title">Breakfast Special Menu</h2>
+         <p class="section-sub">Start your morning right with our signature breakfast dishes</p>
+         <div class="meal-grid">
+            <div class="meal-item"><img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnJlYWtmYXN0fGVufDB8fDB8fHww" alt="item"><div class="meal-item-info"><h5>Classic English Breakfast</h5><p>Eggs, sausages, baked beans, toast.</p></div><div class="meal-item-price">$120</div></div>
+            <div class="meal-item"><img src="https://images.unsplash.com/photo-1538220856186-0be0e085984d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YnJlYWtmYXN0fGVufDB8fDB8fHww" alt="item"><div class="meal-item-info"><h5>Healthy Fruit Platter</h5><p>Fresh berries, kiwi, bananas, yogurt.</p></div><div class="meal-item-price">$64</div></div> 
+            <div class="meal-item"><img src="https://plus.unsplash.com/premium_photo-1733259677103-fbb5d70ef830?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8YnJlYWtmYXN0fGVufDB8fDB8fHww" alt="item"><div class="meal-item-info"><h5>Avocado Egg Toast</h5><p>Sourdough, poached egg, avocado, herbs.</p></div><div class="meal-item-price">$54</div></div>
+            <div class="meal-item"><img src="https://plus.unsplash.com/premium_photo-1663840277579-ff6147963ce7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGJyZWFrZmFzdHxlbnwwfHwwfHx8MA%3D%3D" alt="item"><div class="meal-item-info"><h5>Fluffy Maple Pancakes</h5><p>Pancakes, maple syrup, butter, berries.</p></div><div class="meal-item-price">$69</div></div>
+            <div class="meal-item"><img src="https://images.unsplash.com/photo-1611601184963-9d1de9b79ff3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGJyZWFrZmFzdHxlbnwwfHwwfHx8MA%3D%3D" alt="item"><div class="meal-item-info"><h5>Gourmet Breakfast Table</h5><p>Assorted pastries, eggs, juice, coffee.</p></div><div class="meal-item-price">$78</div></div>        
+            <div class="meal-item"><img src="https://images.unsplash.com/photo-1506084868230-bb9d95c24759?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGJyZWFrZmFzdHxlbnwwfHwwfHx8MA%3D%3D" alt="item"><div class="meal-item-info"><h5>Blueberry Stack Pancakes</h5><p>Blueberries, syrup, whipped cream.</p></div><div class="meal-item-price">$82</div></div>        
+            <div class="meal-item"><img src="https://images.unsplash.com/photo-1620146344904-097a0002d797?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fGJyZWFrZmFzdHxlbnwwfHwwfHx8MA%3D%3D" alt="item"><div class="meal-item-info"><h5>Butter Croissants & Coffee</h5><p>French croissants, fresh butter, cappuccino.</p></div><div class="meal-item-price">$58</div></div>        
+            <div class="meal-item"><img src="https://images.unsplash.com/photo-1531234799389-dcb7651eb0a2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzB8fGJyZWFrZmFzdHxlbnwwfHwwfHx8MA%3D%3D" alt="item"><div class="meal-item-info"><h5>Continental Brunch Spread</h5><p>Fruit bowl, boiled eggs, croissants, tea</p></div><div class="meal-item-price">$42</div></div>
+          </div>
+          <div class="book-table-wrap"><a href="#reservation" class="btn-primary">Book a Table 🍽️ </a></div>
+       </div>
+       
+       <!-- LUNCH MENU -->
+        <div class="meal-menu-section" style="background-color:var(--bg);">
+         <div class="meal-icon">🍱</div>
+         <h2 class="section-title">Lunch Special Menu</h2>
+         <p class="section-sub">Power through your day with our hearty lunch selections</p>
+         <div class="meal-grid">
+            <div class="meal-item"><img src="https://plus.unsplash.com/premium_photo-1683619761492-639240d29bb5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YnVyZ2VyfGVufDB8fDB8fHww" alt="item"><div class="meal-item-info"><h5>Smash Burger Deluxe</h5><p>Beef, cheese, lettuce.</p></div><div class="meal-item-price">$95</div></div>
+            <div class="meal-item"><img src="https://images.unsplash.com/photo-1716237386053-e7f2747d123d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG1hcmdoZXJpdGElMjBwaXp6YXxlbnwwfHwwfHx8MA%3D%3D" alt="item"><div class="meal-item-info"><h5>Margherita Pizza</h5><p>Mozzarella, basil, tomato.</p></div><div class="meal-item-price">$75</div></div>
+            <div class="meal-item"><img src="https://plus.unsplash.com/premium_photo-1778342449541-20a22fa5b4e2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fGNyZWFteSUyMGNhcmJvbmFyYXxlbnwwfHwwfHx8MA%3D%3D" alt="item"><div class="meal-item-info"><h5>Creamy Carbonara</h5><p>Pasta, pancetta, parmesan.</p></div><div class="meal-item-price">$65</div></div>
+            <div class="meal-item"><img src="https://images.unsplash.com/photo-1666599028424-e316d4e34aa6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Z3JpbGxlZCUyMGNoaWNrZW4lMjBib3dsfGVufDB8fDB8fHww" alt="item"><div class="meal-item-info"><h5>Grilled Chicken Bowl</h5><p>Chicken, rice, avocado.</p></div><div class="meal-item-price">$72</div></div>
+            <div class="meal-item"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c2FsYWR8ZW58MHx8MHx8fDA%3D" alt="item"><div class="meal-item-info"><h5>Garden Fresh Salad</h5><p>Mixed greens, vinaigrette.</p></div><div class="meal-item-price">$48</div></div>
+            <div class="meal-item"><img src="https://plus.unsplash.com/premium_photo-1681406995031-fe952f1e0858?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fHN0cmVldCUyMHRhY29zfGVufDB8fDB8fHww" alt="item"><div class="meal-item-info"><h5>Street Tacos</h5><p>Corn tortilla, beef, onion.</p></div><div class="meal-item-price">$55</div></div>
+            <div class="meal-item"><img src="https://plus.unsplash.com/premium_photo-1723672929404-36ba6ed8ab50?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cmliZXllJTIwc3RlYWt8ZW58MHx8MHx8fDA%3D" alt="item"><div class="meal-item-info"><h5>Ribeye Steak</h5><p>Prime cut, herb butter.</p></div><div class="meal-item-price">$110</div></div>
+            <div class="meal-item"><img src="https://images.unsplash.com/photo-1553621042-f6e147245754?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3VzaGklMjBwbGF0dGVyfGVufDB8fDB8fHww" alt="item"><div class="meal-item-info"><h5>Sushi Platter</h5><p>Salmon, tuna, avocado rolls</p></div><div class="meal-item-price">$88</div></div>
+          </div>
+          <div class="book-table-wrap"><a href="#reservation" class="btn-primary">Book a Table 🍽️ </a></div>
+         </div>
+         
+         <!-- DINNER MENU -->
+          <div class="meal-menu-section">
+            <div class="meal-icon">🍷</div>
+            <h2 class="section-title">Dinner Special Menu</h2>
+            <p class="section-sub">End your day with an extraordinary dining experience</p>
+            <div class="meal-grid">
+               <div class="meal-item"><img src="https://media.istockphoto.com/id/2204880455/photo/grilled-ribeye-steaks.webp?a=1&b=1&s=612x612&w=0&k=20&c=-0DDcR21fX1lJ2hFS2kex1WV5JgJHLC9c6FT7OcMM_0=" alt="item"><div class="meal-item-info"><h5>Prime Ribeye Steak</h5><p>Beef, herbs, garlic butter.</p></div><div class="meal-item-price">$145</div></div>
+               <div class="meal-item"><img src="https://plus.unsplash.com/premium_photo-1668998196167-3e3782ac266a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHByZW1pdW0lMjBzdXNoaXxlbnwwfHwwfHx8MA%3D%3D" alt="item"><div class="meal-item-info"><h5>Premium Sushi Platter</h5><p>Salmon, tuna, rolls.</p></div><div class="meal-item-price">$130</div></div>
+               <div class="meal-item"><img src="https://images.unsplash.com/photo-1585504455924-3d3b0eb2b8ee?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNob2NvbGF0ZSUyMGxhdmElMjBjYWtlfGVufDB8fDB8fHww" alt="item"><div class="meal-item-info"><h5>Chocolate Lava Cake</h5><p>Warm chocolate, ice cream.</p></div><div class="meal-item-price">$55</div></div>
+               <div class="meal-item"><img src="https://images.unsplash.com/photo-1622880833523-7cf1c0bd4296?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d29vZCUyMGZpcmVkJTIwcGl6emF8ZW58MHx8MHx8fDA%3D" alt="item"><div class="meal-item-info"><h5>Wood Fired Pizza</h5><p>Mozzarella, prosciutto.</p></div><div class="meal-item-price">$95</div></div>
+               <div class="meal-item"><img src="https://images.unsplash.com/photo-1645112411341-6c4fd023714a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fHRydWZmbGUlMjBwYXN0YXxlbnwwfHwwfHx8MA%3D%3D" alt="item"><div class="meal-item-info"><h5>Truffle Pasta</h5><p>Tagliatelle, black truffle.</p></div><div class="meal-item-price">$115</div></div>
+               <div class="meal-item"><img src="https://images.unsplash.com/photo-1675209705883-7aec595f5aa8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGdyaWxsZWQlMjBzYWxtb258ZW58MHx8MHx8fDA%3D" alt="item"><div class="meal-item-info"><h5>Grilled Salmon</h5><p>Salmon fillet, lemon butter.</p></div><div class="meal-item-price">$125</div></div>
+               <div class="meal-item"><img src="https://images.unsplash.com/photo-1551782450-17144efb9c50?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fGJ1cmdlcnxlbnwwfHwwfHx8MA%3D%3D" alt="item"><div class="meal-item-info"><h5>Wagyu Burger</h5><p>Wagyu beef, truffle mayo.</p></div><div class="meal-item-price">$98</div></div>
+               <div class="meal-item"><img src="https://images.unsplash.com/photo-1746211108786-ca20c8f80ecd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2hlZidzJTIwc3BlY2lhbCUyMHNhbGFkfGVufDB8fDB8fHww" alt="item"><div class="meal-item-info"><h5>Chef's Special Salad</h5><p>Seasonal greens, dressing.</p></div><div class="meal-item-price">$62</div></div>
+             </div>
+             <div class="book-table-wrap"><a href="#reservation" class="btn-primary">Book a Table 🍽️</a></div>
+          </div>
+          
+          <!-- TESTIMONIALS - Slider -->
+           <div class="testimonials-section">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <p class="section-sub">Real experiences from our valued guests</p>
+            <div class="testimonials-wrapper">
+               <div class="testimonials-track" id="testimonialsTrack">
+                  <div class="testimonials-card"><div class="testimonials-stars">★★★★★</div><p>"Absolutely the best dining experience I've had in the city. The food was phenomenal and the ambiance was perfect for an evening".</p><div class="testimonials-author"><img src="https://randomuser.me/api/portraits/women/35.jpg" alt="Client"><div><h5>Sarah Johnson</h5><span>Regular Customer</span></div></div></div>
+                  <div class="testimonials-card"><div class="testimonials-stars">★★★★★</div><p>"The breakfast is out of this world. Fresh ingredients, amazing presentation and the staff is incredibly warm and hardworking".</p><div class="testimonials-author"><img src="https://randomuser.me/api/portraits/men/49.jpg" alt="Client"><div><h5>Ahmed Khan</h5><span>Food Blogger</span></div></div></div>
+                  <div class="testimonials-card"><div class="testimonials-stars">★★★★</div><p>"We celebrated our anniversary here and it was magical. The dinner menu exceeded our expectations - highly recommend to come again".</p><div class="testimonials-author"><img src="https://randomuser.me/api/portraits/women/48.jpg" alt="Client"><div><h5>Maria Garcia</h5><span>Loyal Guest</span></div></div></div>
+                  <div class="testimonials-card"><div class="testimonials-stars">★★★★</div><p>"Outstanding service and incredible food. The lunch specials are amazing value for money. Will definitely be coming back!"</p><div class="testimonials-author"><img src="https://randomuser.me/api/portraits/men/71.jpg" alt="Client"><div><h5>James Wilson</h5><span>Business Dinner</span></div></div></div>
+                  <div class="testimonials-card"><div class="testimonials-stars">★★★★</div><p>"The sushi platter is absolutely divine! Best Japanese-fusion food in the city. The atmosphere is cozy and the staff is attentive."</p><div class="testimonials-author"><img src="https://randomuser.me/api/portraits/women/81.jpg" alt="Client"><div><h5>Aisha Malik</h5><span>Food Critic</span></div></div></div>
+                  <div class="testimonials-card"><div class="testimonials-stars">★★★★</div><p>"Brought my family here for a birthday dinner. The staff went above and beyond to make it special. The lava cake is a must-try!"</p><div class="testimonials-author"><img src="https://randomuser.me/api/portraits/men/92.jpg" alt="Client"><div><h5>Robert Chen</h5><span>Family Dinner</span></div></div></div>
+                  <div class="testimonials-card"><div class="testimonials-stars">★★★★</div><p>"Hands down the best restaurant experience. Every dish is crafted with love and the presentation is gallery-worthy. Highly recommended!"</p><div class="testimonials-author"><img src="https://randomuser.me/api/portraits/women/27.jpg" alt="Client"><div><h5>Fatima Zahra</h5><span>Loyal Guest</span></div></div></div>
+                </div>
+             </div>
+             <div class="testimonials-nav">
+               <button id="tPrev">&#8249;</button>
+               <button id="tNext">&#8250;</button>
+             </div>
+             <div class="testimonials-dots" id="testimonialsDots"></div>
+          </div>
+          
+          <!-- CTA -->
+           <div class="cta-section">
+            <h2>Do Not Wait - Order Now!</h2>
+            <div class="cta-features">
+               <div class="cta-feature"><span>🌱</span> Fresh Ingredients</div>
+               <div class="cta-feature"><span>🤤</span> Mouth Watering Recipes</div>
+               <div class="cta-feature"><span>🛵</span> Delivered to your Door</div>
+               <div class="cta-feature"><span>🛍️</span> Ready for Pickup</div>
+             </div>
+             <a href="#reservation" class="btn-primary" style="background: white;color:var(--primary);">Order Now</a>
+           </div>
+           
+           <!-- RESERVATION FORM -->
+            <div class="reservation-section" id="reservation">
+               <h2 class="section-title">Reserve Your Table</h2>
+               <p class="section-sub">Fill in the details below and we'll confirm your booking</p>
+               <div id="reservationSuccess" style="display:none; background: #d4edda; color: #155724; padding:16px; border-radius:10px; text-align:center; max-width:750px; margin:0 auto 20px; font-size:16px; font-weight:600;"></div>
+               <form class="form-grid" id="reservationForm">
+                  <div class="form-group"><label>Full Name</label><input type="text" id="resName" placeholder="Enter your name"><span class="auth-error" id="resNameErr">Name is required</span></div>
+                  <div class="form-group"><label>Phone Number</label><input type="text" id="resPhone" placeholder="Enter your phone"><span class="auth-error" id="resPhoneErr">Phone is required</span></div>
+                  <div class="form-group"><label>Date</label><input type="date" id="resDate"><span class="auth-error" id="resDateErr">Date is required</span></div>
+                  <div class="form-group"><label>Time</label><input type="time" id="resTime"><span class="auth-error" id="resTimeErr">Time is required</span></div>
+                  <div class="form-group"><label>Number of Guests</label><select id="resGuests"><option value="">Select guests</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option></select><span class="auth-error" id="resGuestsErr">Please select guests</span></div>
+                  <div class="form-group"><label>Occasion</label><select id="resOccasion"><option value="">Select occasion</option><option>Birthday</option><option>Anniversary</option><option>Business Dinner</option><option>Casual Dining</option></select></div>
+                  <div class="form-group full-width"><label>Special Requests</label><textarea id="resNote" rows="3" placeholder="Any special requests..."></textarea></div>
+                  <div class="form-submit"><button type="submit" class="btn-primary">Confirm reservation</button></div>
+                </form>
+             </div>
+             
+             <!-- FOOTER -->
+              <footer class="footer">
+               <div class="footer-top">
+                  <div>
+                     <div class="footer-brand">
+                        <div class="footer-logo-circle">U</div>
+                        <div class="footer-logo">Urban <span>Bites</span></div>
+                      </div>
+                      <p class="footer-tagline">
+                        Fresh ingredients & mouth watering recipes.<br>
+                        A passion for good food delivered to your door<br>
+                        or ready for pickup.
+                      </p>
+                   </div>
+                   <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact Us</a></li><li><a href="#reservation">Reserve Table</a></li></ul></div>
+                   <div class="footer-col"><h4>Opening Hours</h4><ul><li><a href="#">Mon-Fri: 8am - 10pm</a></li><li><a href="#">Saturday: 9am - 11pm</a></li><li><a href="#">Sunday: 10am - 9pm</a></li></ul></div>
+                </div>
+                <div class="footer-button"><p>&copy; 2024 Urban Bites. All rights reserved.</p></div>
+              </footer>
+              
+              <script src="productsdata.js"></script>
+              <script src="app.js"></script>
+                                 
+
+          
+          
+        
+       
+                       
+</body>
+</html> 
